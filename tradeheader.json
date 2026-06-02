@@ -1,0 +1,406 @@
+{
+    "elmType": "div",
+    "style": {
+        "width": "100%",
+        "box-sizing": "border-box",
+        "margin": "0 0 12px 0",
+        "border": "1px solid #f3d7bf",
+        "border-radius": "12px",
+        "overflow": "hidden",
+        "background-color": "#ffffff",
+        "box-shadow": "0 2px 10px rgba(15,23,42,0.04)"
+    },
+    "children": [
+        {
+            "elmType": "div",
+            "style": {
+                "height": "4px",
+                "background": "linear-gradient(90deg, #f59e0b 0%, #fdba74 100%)"
+            }
+        },
+        {
+            "elmType": "div",
+            "style": {
+                "padding": "14px 16px 12px 16px"
+            },
+            "children": [
+                {
+                    "elmType": "div",
+                    "style": {
+                        "display": "flex",
+                        "align-items": "center",
+                        "justify-content": "space-between",
+                        "gap": "12px",
+                        "margin-bottom": "10px"
+                    },
+                    "children": [
+                        {
+                            "elmType": "div",
+                            "style": {
+                                "display": "flex",
+                                "align-items": "center",
+                                "gap": "8px",
+                                "min-width": "0"
+                            },
+                            "children": [
+                                {
+                                    "elmType": "div",
+                                    "attributes": {
+                                        "iconName": "Bank"
+                                    },
+                                    "style": {
+                                        "font-size": "15px",
+                                        "color": "#c2410c",
+                                        "flex-shrink": "0"
+                                    }
+                                },
+                                {
+                                    "elmType": "div",
+                                    "style": {
+                                        "font-size": "12px",
+                                        "font-weight": "700",
+                                        "letter-spacing": "0.04em",
+                                        "text-transform": "uppercase",
+                                        "color": "#9a3412",
+                                        "white-space": "nowrap",
+                                        "overflow": "hidden",
+                                        "text-overflow": "ellipsis"
+                                    },
+                                    "txtContent": "Personal Trade Review"
+                                }
+                            ]
+                        },
+                        {
+                            "elmType": "div",
+                            "style": {
+                                "padding": "3px 8px",
+                                "border-radius": "999px",
+                                "background-color": "#fff7ed",
+                                "border": "1px solid #fdba74",
+                                "font-size": "11px",
+                                "font-weight": "600",
+                                "color": "#c2410c",
+                                "white-space": "nowrap",
+                                "flex-shrink": "0"
+                            },
+                            "txtContent": "Compliance"
+                        }
+                    ]
+                },
+                {
+                    "elmType": "div",
+                    "style": {
+                        "margin-bottom": "12px"
+                    },
+                    "children": [
+                        {
+                            "elmType": "div",
+                            "style": {
+                                "font-size": "11px",
+                                "font-weight": "700",
+                                "text-transform": "uppercase",
+                                "letter-spacing": "0.05em",
+                                "color": "#9a3412",
+                                "margin-bottom": "4px"
+                            },
+                            "txtContent": "Trade"
+                        },
+                        {
+                            "elmType": "div",
+                            "style": {
+                                "font-size": "24px",
+                                "font-weight": "800",
+                                "line-height": "1.15",
+                                "color": "=if([$Title] == 'BUY', '#0f766e', if([$Title] == 'SELL', '#b42318', '#111827'))",
+                                "margin-bottom": "6px",
+                                "word-break": "break-word"
+                            },
+                            "txtContent": "[$Title]"
+                        },
+                        {
+                            "elmType": "div",
+                            "style": {
+                                "font-size": "13px",
+                                "line-height": "1.45",
+                                "color": "#475569",
+                                "word-break": "break-word"
+                            },
+                            "txtContent": "='Trader: ' + [$TraderStringName]"
+                        }
+                    ]
+                },
+                {
+                    "elmType": "div",
+                    "style": {
+                        "display": "flex",
+                        "flex-wrap": "wrap",
+                        "gap": "8px",
+                        "margin-bottom": "12px"
+                    },
+                    "children": [
+                        {
+                            "elmType": "div",
+                            "style": {
+                                "padding": "6px 10px",
+                                "border-radius": "999px",
+                                "background-color": "#fff7ed",
+                                "border": "1px solid #fed7aa"
+                            },
+                            "children": [
+                                {
+                                    "elmType": "span",
+                                    "style": {
+                                        "font-size": "11px",
+                                        "font-weight": "700",
+                                        "text-transform": "uppercase",
+                                        "letter-spacing": "0.04em",
+                                        "color": "#c2410c"
+                                    },
+                                    "txtContent": "Submission: "
+                                },
+                                {
+                                    "elmType": "span",
+                                    "style": {
+                                        "font-size": "11px",
+                                        "font-weight": "700",
+                                        "color": "#7c2d12"
+                                    },
+                                    "txtContent": "[$SubmissionStatus]"
+                                }
+                            ]
+                        },
+                        {
+                            "elmType": "div",
+                            "style": {
+                                "padding": "6px 10px",
+                                "border-radius": "999px",
+                                "background-color": "#fff7ed",
+                                "border": "1px solid #fed7aa"
+                            },
+                            "children": [
+                                {
+                                    "elmType": "span",
+                                    "style": {
+                                        "font-size": "11px",
+                                        "font-weight": "700",
+                                        "text-transform": "uppercase",
+                                        "letter-spacing": "0.04em",
+                                        "color": "#c2410c"
+                                    },
+                                    "txtContent": "Approval: "
+                                },
+                                {
+                                    "elmType": "span",
+                                    "style": {
+                                        "font-size": "11px",
+                                        "font-weight": "700",
+                                        "color": "#7c2d12"
+                                    },
+                                    "txtContent": "[$ApprovalStatus]"
+                                }
+                            ]
+                        },
+                        {
+                            "elmType": "div",
+                            "style": {
+                                "padding": "6px 10px",
+                                "border-radius": "999px",
+                                "background-color": "#f8fafc",
+                                "border": "1px solid #e2e8f0"
+                            },
+                            "children": [
+                                {
+                                    "elmType": "span",
+                                    "style": {
+                                        "font-size": "11px",
+                                        "font-weight": "700",
+                                        "text-transform": "uppercase",
+                                        "letter-spacing": "0.04em",
+                                        "color": "#64748b"
+                                    },
+                                    "txtContent": "Status: "
+                                },
+                                {
+                                    "elmType": "span",
+                                    "style": {
+                                        "font-size": "11px",
+                                        "font-weight": "700",
+                                        "color": "#0f172a"
+                                    },
+                                    "txtContent": "[$Status]"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "elmType": "div",
+                    "style": {
+                        "border-top": "1px solid #f1f5f9",
+                        "padding-top": "10px",
+                        "display": "grid",
+                        "grid-template-columns": "1fr",
+                        "row-gap": "8px"
+                    },
+                    "children": [
+                        {
+                            "elmType": "div",
+                            "style": {
+                                "display": "flex",
+                                "align-items": "flex-start",
+                                "gap": "8px"
+                            },
+                            "children": [
+                                {
+                                    "elmType": "div",
+                                    "style": {
+                                        "width": "110px",
+                                        "font-size": "12px",
+                                        "font-weight": "700",
+                                        "color": "#64748b",
+                                        "flex-shrink": "0"
+                                    },
+                                    "txtContent": "Broker"
+                                },
+                                {
+                                    "elmType": "div",
+                                    "style": {
+                                        "font-size": "12px",
+                                        "font-weight": "600",
+                                        "color": "#0f172a",
+                                        "word-break": "break-word"
+                                    },
+                                    "txtContent": "[$Broker]"
+                                }
+                            ]
+                        },
+                        {
+                            "elmType": "div",
+                            "style": {
+                                "display": "flex",
+                                "align-items": "flex-start",
+                                "gap": "8px"
+                            },
+                            "children": [
+                                {
+                                    "elmType": "div",
+                                    "style": {
+                                        "width": "110px",
+                                        "font-size": "12px",
+                                        "font-weight": "700",
+                                        "color": "#64748b",
+                                        "flex-shrink": "0"
+                                    },
+                                    "txtContent": "Exchange"
+                                },
+                                {
+                                    "elmType": "div",
+                                    "style": {
+                                        "font-size": "12px",
+                                        "font-weight": "600",
+                                        "color": "#0f172a",
+                                        "word-break": "break-word"
+                                    },
+                                    "txtContent": "[$Exchange]"
+                                }
+                            ]
+                        },
+                        {
+                            "elmType": "div",
+                            "style": {
+                                "display": "flex",
+                                "align-items": "flex-start",
+                                "gap": "8px"
+                            },
+                            "children": [
+                                {
+                                    "elmType": "div",
+                                    "style": {
+                                        "width": "110px",
+                                        "font-size": "12px",
+                                        "font-weight": "700",
+                                        "color": "#64748b",
+                                        "flex-shrink": "0"
+                                    },
+                                    "txtContent": "Beneficial Owner"
+                                },
+                                {
+                                    "elmType": "div",
+                                    "style": {
+                                        "font-size": "12px",
+                                        "font-weight": "600",
+                                        "color": "#0f172a",
+                                        "word-break": "break-word"
+                                    },
+                                    "txtContent": "[$BeneficialOwner]"
+                                }
+                            ]
+                        },
+                        {
+                            "elmType": "div",
+                            "style": {
+                                "display": "flex",
+                                "align-items": "flex-start",
+                                "gap": "8px"
+                            },
+                            "children": [
+                                {
+                                    "elmType": "div",
+                                    "style": {
+                                        "width": "110px",
+                                        "font-size": "12px",
+                                        "font-weight": "700",
+                                        "color": "#64748b",
+                                        "flex-shrink": "0"
+                                    },
+                                    "txtContent": "Instruction"
+                                },
+                                {
+                                    "elmType": "div",
+                                    "style": {
+                                        "font-size": "12px",
+                                        "font-weight": "600",
+                                        "color": "#0f172a",
+                                        "word-break": "break-word"
+                                    },
+                                    "txtContent": "[$Instruction]"
+                                }
+                            ]
+                        },
+                        {
+                            "elmType": "div",
+                            "style": {
+                                "display": "flex",
+                                "align-items": "flex-start",
+                                "gap": "8px"
+                            },
+                            "children": [
+                                {
+                                    "elmType": "div",
+                                    "style": {
+                                        "width": "110px",
+                                        "font-size": "12px",
+                                        "font-weight": "700",
+                                        "color": "#64748b",
+                                        "flex-shrink": "0"
+                                    },
+                                    "txtContent": "Trader / AR"
+                                },
+                                {
+                                    "elmType": "div",
+                                    "style": {
+                                        "font-size": "12px",
+                                        "font-weight": "600",
+                                        "color": "#0f172a",
+                                        "word-break": "break-word"
+                                    },
+                                    "txtContent": "=''+[$TraderStringName]+' ('+[$AR]+')'"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
